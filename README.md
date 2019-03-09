@@ -24,5 +24,5 @@
 ## 七、充值系统
 ## 八、交接班
 <img src="https://github.com/zhengchuanzhe/BMSYSTEMNEW/blob/master/Image/Home.jpg"  alt="主页"/>
-<img src="https://github.com/zhengchuanzhe/BMSYSTEMNEW/blob/master/Image/ReportForm.jpg" width="300" height="300" alt="报表"/>
-<img src="https://github.com/zhengchuanzhe/BMSYSTEMNEW/blob/master/Image/VipNoBorrow" width="300" height="300" alt="非VIP租车"/>
+<img src="https://github.com/zhengchuanzhe/BMSYSTEMNEW/blob/master/Image/ReportForm.jpg"  alt="报表"/>
+<img src="https://github.com/zhengchuanzhe/BMSYSTEMNEW/blob/master/Image/VipNoBorrow.jpg"  alt="非VIP租车"/>
