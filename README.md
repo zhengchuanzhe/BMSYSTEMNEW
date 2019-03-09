@@ -23,6 +23,6 @@
 ## 6.6规则管理
 # 七、充值系统
 # 八、交接班
-<img src="https://github.com/zhengchuanzhe/BMSYSTEMNEW/tree/master/Image/Home.jpg" width="150" height="150" alt=""/>
+<img src="https://github.com/zhengchuanzhe/BMSYSTEMNEW/blob/master/Image/Home.jpg" width="150" height="150" alt="xx'x'x"/>
 <img src="https://github.com/zhengchuanzhe/BMSYSTEMNEW/tree/master/Image/ReportForm.jpg" width="150" height="150" alt=""/>
 <img src="https://github.com/zhengchuanzhe/BMSYSTEMNEW/tree/master/Image/VipNoBorrow" width="150" height="150" alt=""/>
