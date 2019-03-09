@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E8AEF92E-A28B-4A55-825C-B771443079EF}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BIKEDAL</RootNamespace>
+    <AssemblyName>BIKEDAL</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BIKECOMMON">
+      <HintPath>..\BIKECOMMON\bin\Debug\BIKECOMMON.dll</HintPath>
+    </Reference>
+    <Reference Include="MODEL">
+      <HintPath>..\MODEL\bin\Debug\MODEL.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BikeReturnDal.cs" />
+    <Compile Include="BorrowKindDal.cs" />
+    <Compile Include="Class1.cs" />
+    <Compile Include="CostRuleDal.cs" />
+    <Compile Include="DepartDal.cs" />
+    <Compile Include="DepartMonthFormDal.cs" />
+    <Compile Include="DepartYearFormDal.cs" />
+    <Compile Include="IntegralDal.cs" />
+    <Compile Include="LogDal.cs" />
+    <Compile Include="MonthCostRuleDal.cs" />
+    <Compile Include="NightBorrowDal.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RuleKindRelationDal.cs" />
+    <Compile Include="UInfoDal.cs" />
+    <Compile Include="UserDal.cs" />
+    <Compile Include="VipBorrowDal.cs" />
+    <Compile Include="VipDal.cs" />
+    <Compile Include="VipLevelDal.cs" />
+    <Compile Include="VipMoneyDal.cs" />
+    <Compile Include="VipNoBorrowDal.cs" />
+    <Compile Include="VipNoDal.cs" />
+    <Compile Include="VipYearFormDal.cs" />
+    <Compile Include="YearCostRuleDal.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

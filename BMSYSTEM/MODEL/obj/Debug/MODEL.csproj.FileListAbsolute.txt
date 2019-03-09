@@ -1,0 +1,17 @@
+C:\Users\传哲\Desktop\BMSYSTEMNEW\BMSYSTEM\MODEL\bin\Debug\MODEL.dll
+C:\Users\传哲\Desktop\BMSYSTEMNEW\BMSYSTEM\MODEL\bin\Debug\MODEL.pdb
+C:\Users\传哲\Desktop\BMSYSTEMNEW\BMSYSTEM\MODEL\obj\Debug\MODEL.dll
+C:\Users\传哲\Desktop\BMSYSTEMNEW\BMSYSTEM\MODEL\obj\Debug\MODEL.pdb
+E:\MyProject\车行\BMSYSTEMNEW\BMSYSTEM\MODEL\bin\Debug\MODEL.dll
+E:\MyProject\车行\BMSYSTEMNEW\BMSYSTEM\MODEL\bin\Debug\MODEL.pdb
+E:\MyProject\车行\BMSYSTEMNEW\BMSYSTEM\MODEL\obj\Debug\MODEL.dll
+E:\MyProject\车行\BMSYSTEMNEW\BMSYSTEM\MODEL\obj\Debug\MODEL.pdb
+H:\MyProject\车行\BMSYSTEMNEW\BMSYSTEM\MODEL\bin\Debug\MODEL.dll
+H:\MyProject\车行\BMSYSTEMNEW\BMSYSTEM\MODEL\bin\Debug\MODEL.pdb
+H:\MyProject\车行\BMSYSTEMNEW\BMSYSTEM\MODEL\obj\Debug\MODEL.dll
+H:\MyProject\车行\BMSYSTEMNEW\BMSYSTEM\MODEL\obj\Debug\MODEL.pdb
+J:\MyProject\车行\BMSYSTEMNEW\BMSYSTEM\MODEL\bin\Debug\MODEL.dll
+J:\MyProject\车行\BMSYSTEMNEW\BMSYSTEM\MODEL\bin\Debug\MODEL.pdb
+J:\MyProject\车行\BMSYSTEMNEW\BMSYSTEM\MODEL\obj\Debug\MODEL.csprojResolveAssemblyReference.cache
+J:\MyProject\车行\BMSYSTEMNEW\BMSYSTEM\MODEL\obj\Debug\MODEL.dll
+J:\MyProject\车行\BMSYSTEMNEW\BMSYSTEM\MODEL\obj\Debug\MODEL.pdb

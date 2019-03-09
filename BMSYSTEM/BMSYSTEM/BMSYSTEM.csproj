@@ -1,0 +1,597 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{885970D7-8066-4394-8A51-54390F6EB21C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BMSYSTEM</RootNamespace>
+    <AssemblyName>BMSYSTEM</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>BMSYSTEM.Program</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AForge, Version=2.2.5.0, Culture=neutral, PublicKeyToken=c1db6ff4eaa06aeb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>E:\MyProject\车行\BMSYSTEMNEW\BMSYSTEM\BMSYSTEM\bin\Debug\AForge.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Controls, Version=2.2.5.0, Culture=neutral, PublicKeyToken=a8ac264d1dc6b9d9, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>E:\MyProject\车行\BMSYSTEMNEW\BMSYSTEM\BMSYSTEM\bin\Debug\AForge.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Imaging, Version=2.2.5.0, Culture=neutral, PublicKeyToken=ba8ddea9676ca48b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>E:\MyProject\车行\BMSYSTEMNEW\BMSYSTEM\BMSYSTEM\bin\Debug\AForge.Imaging.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Video, Version=2.2.5.0, Culture=neutral, PublicKeyToken=cbfb6e07d173c401, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>E:\MyProject\车行\BMSYSTEMNEW\BMSYSTEM\BMSYSTEM\bin\Debug\AForge.Video.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Video.DirectShow, Version=2.2.5.0, Culture=neutral, PublicKeyToken=61ea4348d43881b7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>E:\MyProject\车行\BMSYSTEMNEW\BMSYSTEM\BMSYSTEM\bin\Debug\AForge.Video.DirectShow.dll</HintPath>
+    </Reference>
+    <Reference Include="BIKEBLL, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\BIKEBLL\bin\Debug\BIKEBLL.dll</HintPath>
+    </Reference>
+    <Reference Include="BIKECOMMON, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\BIKEBLL\bin\Debug\BIKECOMMON.dll</HintPath>
+    </Reference>
+    <Reference Include="MODEL">
+      <HintPath>..\MODEL\bin\Debug\MODEL.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddDepartWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddDepartWindow.Designer.cs">
+      <DependentUpon>AddDepartWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddRuleWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddRuleWindow.Designer.cs">
+      <DependentUpon>AddRuleWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddVipLevelWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddVipLevelWindow.Designer.cs">
+      <DependentUpon>AddVipLevelWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddVipNoWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddVipNoWindow.Designer.cs">
+      <DependentUpon>AddVipNoWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddVipWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddVipWindow.Designer.cs">
+      <DependentUpon>AddVipWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BeforeBorrow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BeforeBorrow.Designer.cs">
+      <DependentUpon>BeforeBorrow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BorrowReturnWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BorrowReturnWindow.Designer.cs">
+      <DependentUpon>BorrowReturnWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Camera.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Camera.Designer.cs">
+      <DependentUpon>Camera.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChangeDepartWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChangeDepartWindow.Designer.cs">
+      <DependentUpon>ChangeDepartWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChangeMark.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChangeMark.Designer.cs">
+      <DependentUpon>ChangeMark.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChangeRuleWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChangeRuleWindow.Designer.cs">
+      <DependentUpon>ChangeRuleWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChangeUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChangeUser.Designer.cs">
+      <DependentUpon>ChangeUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChangeUserWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChangeUserWindow.Designer.cs">
+      <DependentUpon>ChangeUserWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChangeVipLevelWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChangeVipLevelWindow.Designer.cs">
+      <DependentUpon>ChangeVipLevelWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChangeVipNoWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChangeVipNoWindow.Designer.cs">
+      <DependentUpon>ChangeVipNoWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChangeVipWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChangeVipWindow.Designer.cs">
+      <DependentUpon>ChangeVipWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CheckMiGo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CheckMiGo.Designer.cs">
+      <DependentUpon>CheckMiGo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CheckPassWord.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CheckPassWord.Designer.cs">
+      <DependentUpon>CheckPassWord.cs</DependentUpon>
+    </Compile>
+    <Compile Include="checkPassword2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="checkPassword2.Designer.cs">
+      <DependentUpon>checkPassword2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChooseLogInfoWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChooseLogInfoWindow.Designer.cs">
+      <DependentUpon>ChooseLogInfoWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DepartManageWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DepartManageWindow.Designer.cs">
+      <DependentUpon>DepartManageWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DepartMonthFormWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DepartMonthFormWindow.Designer.cs">
+      <DependentUpon>DepartMonthFormWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DepartYearFromWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DepartYearFromWindow.Designer.cs">
+      <DependentUpon>DepartYearFromWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IncomeBorrow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IncomeBorrow.Designer.cs">
+      <DependentUpon>IncomeBorrow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LogWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LogWindow.Designer.cs">
+      <DependentUpon>LogWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NightBorrowRule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NightBorrowRule.Designer.cs">
+      <DependentUpon>NightBorrowRule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="AddUserWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddUserWindow.Designer.cs">
+      <DependentUpon>AddUserWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProporWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProporWindow.Designer.cs">
+      <DependentUpon>ProporWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReChargeWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReChargeWindow.Designer.cs">
+      <DependentUpon>ReChargeWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RuleManageWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RuleManageWindow.Designer.cs">
+      <DependentUpon>RuleManageWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TodayIncome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TodayIncome.Designer.cs">
+      <DependentUpon>TodayIncome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UInfoAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UInfoAdd.Designer.cs">
+      <DependentUpon>UInfoAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UInfoChange.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UInfoChange.Designer.cs">
+      <DependentUpon>UInfoChange.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UManageWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UManageWindow.Designer.cs">
+      <DependentUpon>UManageWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserLogin.Designer.cs">
+      <DependentUpon>UserLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserManageWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserManageWindow.Designer.cs">
+      <DependentUpon>UserManageWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VipBorrowWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VipBorrowWindow.Designer.cs">
+      <DependentUpon>VipBorrowWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VipLevelManageWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VipLevelManageWindow.Designer.cs">
+      <DependentUpon>VipLevelManageWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VipManageWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VipManageWindow.Designer.cs">
+      <DependentUpon>VipManageWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VipNoBorrowWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VipNoBorrowWindow.Designer.cs">
+      <DependentUpon>VipNoBorrowWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VipNoCharge.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VipNoCharge.Designer.cs">
+      <DependentUpon>VipNoCharge.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VipNoManageWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VipNoManageWindow.Designer.cs">
+      <DependentUpon>VipNoManageWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VipNoReturnWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VipNoReturnWindow.Designer.cs">
+      <DependentUpon>VipNoReturnWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VipOrNoBorrowSelectWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VipOrNoBorrowSelectWindow.Designer.cs">
+      <DependentUpon>VipOrNoBorrowSelectWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VipReturnWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VipReturnWindow.Designer.cs">
+      <DependentUpon>VipReturnWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VipYearFormWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VipYearFormWindow.Designer.cs">
+      <DependentUpon>VipYearFormWindow.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AddDepartWindow.resx">
+      <DependentUpon>AddDepartWindow.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddRuleWindow.resx">
+      <DependentUpon>AddRuleWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddVipLevelWindow.resx">
+      <DependentUpon>AddVipLevelWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddVipNoWindow.resx">
+      <DependentUpon>AddVipNoWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddVipWindow.resx">
+      <DependentUpon>AddVipWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BeforeBorrow.resx">
+      <DependentUpon>BeforeBorrow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BorrowReturnWindow.resx">
+      <DependentUpon>BorrowReturnWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Camera.resx">
+      <DependentUpon>Camera.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChangeDepartWindow.resx">
+      <DependentUpon>ChangeDepartWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChangeMark.resx">
+      <DependentUpon>ChangeMark.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChangeRuleWindow.resx">
+      <DependentUpon>ChangeRuleWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChangeUser.resx">
+      <DependentUpon>ChangeUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChangeUserWindow.resx">
+      <DependentUpon>ChangeUserWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChangeVipLevelWindow.resx">
+      <DependentUpon>ChangeVipLevelWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChangeVipNoWindow.resx">
+      <DependentUpon>ChangeVipNoWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChangeVipWindow.resx">
+      <DependentUpon>ChangeVipWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CheckMiGo.resx">
+      <DependentUpon>CheckMiGo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CheckPassWord.resx">
+      <DependentUpon>CheckPassWord.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="checkPassword2.resx">
+      <DependentUpon>checkPassword2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChooseLogInfoWindow.resx">
+      <DependentUpon>ChooseLogInfoWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DepartManageWindow.resx">
+      <DependentUpon>DepartManageWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DepartMonthFormWindow.resx">
+      <DependentUpon>DepartMonthFormWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DepartYearFromWindow.resx">
+      <DependentUpon>DepartYearFromWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IncomeBorrow.resx">
+      <DependentUpon>IncomeBorrow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LogWindow.resx">
+      <DependentUpon>LogWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NightBorrowRule.resx">
+      <DependentUpon>NightBorrowRule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="AddUserWindow.resx">
+      <DependentUpon>AddUserWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProporWindow.resx">
+      <DependentUpon>ProporWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReChargeWindow.resx">
+      <DependentUpon>ReChargeWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RuleManageWindow.resx">
+      <DependentUpon>RuleManageWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TodayIncome.resx">
+      <DependentUpon>TodayIncome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UInfoAdd.resx">
+      <DependentUpon>UInfoAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UInfoChange.resx">
+      <DependentUpon>UInfoChange.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UManageWindow.resx">
+      <DependentUpon>UManageWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserLogin.resx">
+      <DependentUpon>UserLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserManageWindow.resx">
+      <DependentUpon>UserManageWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VipBorrowWindow.resx">
+      <DependentUpon>VipBorrowWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VipLevelManageWindow.resx">
+      <DependentUpon>VipLevelManageWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VipManageWindow.resx">
+      <DependentUpon>VipManageWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VipNoBorrowWindow.resx">
+      <DependentUpon>VipNoBorrowWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VipNoCharge.resx">
+      <DependentUpon>VipNoCharge.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VipNoManageWindow.resx">
+      <DependentUpon>VipNoManageWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VipNoReturnWindow.resx">
+      <DependentUpon>VipNoReturnWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VipOrNoBorrowSelectWindow.resx">
+      <DependentUpon>VipOrNoBorrowSelectWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VipReturnWindow.resx">
+      <DependentUpon>VipReturnWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VipYearFormWindow.resx">
+      <DependentUpon>VipYearFormWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Images\departPic.png" />
+    <Content Include="Images\下拉菜单.png" />
+    <Content Include="Images\主界面.png" />
+    <Content Include="Images\左侧图片.png" />
+    <Content Include="Images\已租车辆查询.png" />
+    <Content Include="Images\已还车辆查询.png" />
+    <Content Include="Images\照片.png" />
+    <Content Include="Images\畅达大图 .jpg" />
+    <None Include="Resources\未标题-1.png" />
+    <None Include="Resources\Delete.bmp" />
+    <None Include="Resources\Delete.jpg" />
+    <None Include="Resources\Save.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 和 x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
